@@ -1,0 +1,214 @@
+*{
+	font-family: 'Noto Sans JP', sans-serif;
+	box-sizing: border-box;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+/*---Search button---*/
+.btn,.btn-outline-success{
+	background-color: black;
+	color: white;
+	border-color: black;
+	width: 20%;
+}
+
+.btn:hover{
+	background-color: #4d88ff;
+}
+
+/*---Home----*/
+.home{
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+	url('./images/img2.jpg') center/cover no-repeat fixed;
+	margin-top: auto;
+	justify-content: center;
+	align-items: center;
+	display:flex;
+	flex-direction: column;
+}
+
+.title{
+	font-size: 65px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/*----Services------*/
+.service{
+max-width: 1200px;
+width: 100%;
+margin:0 auto;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 25px;
+  margin-top: 30px;
+}
+
+
+header h1{
+  margin:20px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+.card{
+  position: relative;
+  overflow: hidden;
+  max-height: 580px
+  height: 100px;
+  box-shadow: 0 2px 10px #1a1a1a;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+.card:hover i{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.card .fas{
+	margin-top: 15px;
+	text-align: center;
+	color: blue;
+	font-size: 150px;
+}
+
+.content{
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: white;
+  padding: 10px 5px;
+  transition: all 0.5s;
+}
+
+.card:hover .content{
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.content .btn{
+  width:100%;
+  box-sizing:border-box;
+  padding:10px;
+  margin-top:30px;
+  outline:none;
+  border:none;
+  background:black;
+  border-radius:20px;
+  color: white;
+  font-size: 20px;
+  }
+
+.content .btn:hover{
+background:#4d88ff;
+text-decoration: none;
+}
+/*----End of Services---*/
+
+/* Contact */
+.contact{
+	max-width:600px;
+	margin:auto;
+	box-sizing:border-box;
+	padding:40px;
+	color:black;
+	margin-top:60px;
+	margin-bottom: 20px;
+}
+
+h2{
+	text-align: center;
+	font-size: 35px;
+}
+
+input[type="text"], textarea, input[type="number"]{
+	width:100%;
+	box-sizing: border-box;
+	padding:12px 10px;
+	background:rgba(0,0,0,0.1);
+	outline:none;
+	border:1px solid black;
+	color:blue;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+input[type="submit"]{
+	width: 100%;
+	box-sizing:border-box;
+	padding:10px;
+	margin-top:30px;
+	outline:none;
+	border:none;
+	background:black;
+	border-radius:20px;
+	color:#fff;
+	line-height: 1.5;
+	font-size: 20px;
+}
+
+input[type=submit]:hover{
+	background:#4d88ff;
+}
+/*-----End of Contact-----*/
+
+/*----------Footer--------------*/
+/*------Social Icons------------*/
+
+#social-icons{
+	
+	background: #fff;
+	text-align: center;
+	padding: 50px 0 50px 0;
+	margin-top: 600px;
+}
+
+#social-icons a{
+	display: inline-block;
+	padding: 5px;
+	margin: 0px 5px;
+	font-size: 40px;
+	border-radius: 5px;
+	transition: transform 0.5s ease, color 0.5s ease
+}
+
+#social-icons a:hover{
+	transform: translateY(-20px);
+}
+
+.facebook{
+	color: #3b5998;
+}
+
+.twitter{
+	color: #38a1f3;
+}
+
+.instagram{
+	color:#e1306c;
+}
+
+.plus{
+	color: #db4a39;
+}
+/*----------End of Social Icons-----*/
+
+.footer{
+	text-align: center;
+	padding-bottom: 1px;
+	height: 150px;
+}
+.footer .text{
+	color: #000;
+	padding-top: 5px;	
+}
+/*--------End of Footer---------*/ 
+
